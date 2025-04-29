@@ -53,10 +53,18 @@ const Contact = () => {
                <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
                <button type='submit' value='Send' className="submitBtn">Submit</button>
                <div className="links">
-                  <img src={FacebookIcon} alt="Facebook" className="link" />
-                  <img src={TwitterIcon} alt="Twitter" className="link" />
-                  <img src={YoutubeIcon} alt="Youtube" className="link" />
-                  <img src={IntagramIcon} alt="Instagram" className="link" />
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                     <img src={FacebookIcon} alt="Facebook" className="link" />
+                  </a>
+                  <a href="https://x.com/Hard2kill_AO?t=dSqldSbv7IT2a2YrFNY_JA&s=09" target="_blank" rel="noopener noreferrer">
+                     <img src={TwitterIcon} alt="Twitter" className="link" />
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                     <img src={YoutubeIcon} alt="Youtube" className="link" />
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                     <img src={IntagramIcon} alt="Instagram" className="link" />
+                  </a>
                </div>
             </form>
          </div>
