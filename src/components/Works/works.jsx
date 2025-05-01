@@ -12,7 +12,7 @@ const Works = () => {
       <section id='works'>
          <div className="worksTitle">My Portfolio</div>
 
-         <span className="workDesc">
+         <span className="workDesc" id='desc-w'>
                I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. I am exited to bring my skilss and experience to help busisnesses achieve their goals and create a strong online presence.
          </span>   
          <div className="worksImgs">
@@ -23,7 +23,7 @@ const Works = () => {
             <img src={Portfolio5} alt="Portfolio5" className="worksImg" />
             <img src={Portfolio6} alt="Portfolio6" className="worksImg" />
          </div>
-         <button className="workBtn">See more</button>
+         <a href='https://github.com/muheez-G'><button className="workBtn">See more </button></a>
       </section>
    )
 }

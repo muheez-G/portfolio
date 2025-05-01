@@ -56,10 +56,10 @@
    color: white;
    border: none;
    border-radius: 0.5rem;
-   background: rgb(40, 40, 40);
+   background: #1A1A1A
 }
 .submitBtn{
-   background: yellow;
+   background: #ffa704;
    border: none;
    padding: 0.75rem 3.5rem;
    margin: 2rem;
@@ -79,4 +79,18 @@
    width: 3rem;
    margin: 0 0.75rem;
    cursor: pointer;
+}
+@media screen and (max-width:720px) {
+   .contactPageTitle{
+      font-size: 2rem;
+      padding-top: 1rem;
+      margin-bottom: 0.57rem;
+   }
+   .clientDesc{
+      font-size: 0.85rem;
+   }
+   #contactPage input::placeholder,
+   textarea::placeholder {
+   font-size: 14px;
+   }
 }

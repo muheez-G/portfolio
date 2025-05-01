@@ -1,5 +1,5 @@
 .navbar {
-	background: rgb(30, 30, 30);
+	background: #1A1A1A;
 	height: 5rem;
 	width: 100vw;
 	max-width: 75rem;
@@ -15,9 +15,14 @@
 
 .logo {
 	object-fit: cover;
-	height: 3rem;
-	width: 4rem;
+	font-size: 35px;
+	color: #ffa500;
 	cursor: pointer;
+	font-weight: 600;
+	font-family:  Verdana, sans-serif
+}
+.logo span{
+	color: orangered;
 }
 
 .desktopMenuListItem {
@@ -26,9 +31,9 @@
 }
 
 .desktopMenuListItem:hover {
-	color: yellow;
+	color: orange;
 	padding-bottom: 0.5rem;
-	border-bottom: 3px solid yellow;
+	border-bottom: 3px solid orange;
 }
 
 .desktopMenuBtn {
@@ -51,9 +56,9 @@
 }
 
 .active {
-	color: yellow;
+	color: orange;
 	padding-bottom: 0.5rem;
-	border-bottom: 3px solid yellow;
+	border-bottom: 3px solid orange;
 }
 
 .mobMenu {
@@ -73,7 +78,7 @@
 	padding: 0.5rem;
 	height:fit-content;
 	min-width: 15rem;
-	background: rgb(40, 40, 40);
+	background: #212121;
 	border-radius: 1rem;
 }
 
@@ -81,7 +86,7 @@
 	color: white;
 	padding: 0.5rem 1rem;
 	margin: 0.25rem;
-	background: rgb(30, 30, 30);
+	background: #1e1e1e3c;
 	cursor: pointer;
 }
 

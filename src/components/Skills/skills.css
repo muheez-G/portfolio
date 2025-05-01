@@ -32,7 +32,9 @@
    margin: 1rem;
    padding: 1.5rem 2rem;
    border-radius: 0.5rem;
-   background: rgb(50, 50,   50);
+   background: #1A1A1A;
+   align-items: center;
+   vertical-align: center;
 }
 .skillBarImg{
    object-fit: cover;
@@ -46,21 +48,39 @@
 }
  
 @media screen and (max-width:720px) {
-   .skillBarText>p{
-      font-size: 2vw;
+   .skillBar{
+      padding: 1rem;
+   }
+   .skillBarText #h2text{
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+   }
+   .skillBarText  p{
+      font-size: 0.85rem;
+      color: #e5e5e5ec;
+   }
+   .skillTitle{
+      font-size: 2rem;
+      padding-top: 1rem;
+      margin-bottom: 0.57rem;
+   }
+   .skillDesc{
+      font-size: 0.85rem;
+   }
+   .skillBarImg{
+      padding-bottom: 10px;
    }
 }
 
 @media screen and (max-width:480px) {
+   .skillBar{
+      flex-direction: column;
+   }
    .skillBarText>p{
       font-size: 3vw;
    }
    .skillBarImg{
-      height: 2.25rem;
-      width: 2.25rem;
+      height: auto;
+      width: 100%;
    }
-   .skillBarText>h2{
-      /* font-size: 3vw; */
-   }
-
 }

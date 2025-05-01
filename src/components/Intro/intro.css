@@ -29,7 +29,7 @@
    height: 50vh; 
    width: 50vh; 
    border-radius: 50%; 
-   background-color: #ffcc00; 
+   background-color: #ff9500; 
    transition: transform 0.3s ease-in-out; 
 }
 
@@ -51,13 +51,8 @@
    color: white;
 }
 
-.hello {
-   font-size: 1.75rem;
-   font-weight: 100;
-}
-
 .introName {
-   color: yellow;
+   color: #ffa704;
 }
 
 .introPara {
@@ -66,7 +61,7 @@
 }
 
 .btn {
-   background: yellow;
+   background: #ffa704;
    margin: 1rem auto;
    padding: 0.75rem 1.5rem;
    border: none;
@@ -79,8 +74,9 @@
 }
 
 .btn:hover {
-   font-weight: 900;
-   background-color: #ffd700; /* Slightly darker yellow for hover effect */
+   font-weight: 500;
+   transition: all 0.3s ease-in-out;
+   background-color: #ffa200; /* Slightly darker yellow for hover effect */
 }
 
 .btnImg {
@@ -94,10 +90,17 @@
       right: 9vw;
    }
    .introContent {
-      font-size: 3vw;
+      font-size: 1rem;
+      text-align: left;
+      min-width: fit-content;
+      padding-bottom: 0rem;
    }
    .hello {
-      font-size: 4.5rem;
+      font-size: 2.75rem;
+      font-weight: 200;
+   }
+   .btn{
+      padding: 0.45rem 0.85rem;
    }
 }
 
