@@ -5,9 +5,9 @@ import Adobe from '../../assets/images/adobe.png'
 import Microsoft from '../../assets/images/microsoft.png'
 import Facebook from '../../assets/images/facebook.png'
 
-import FacebookIcon from '../../assets/images/facebook-icon.png'
+import GitIcon from '../../assets/images/github.png'
 import TwitterIcon from '../../assets/images/twitter.png'
-import YoutubeIcon from '../../assets/images/youtube.png'
+import LinkedIn from '../../assets/images/linkedin.png'
 import IntagramIcon from '../../assets/images/instagram.png'
 import emailjs from '@emailjs/browser'
 
@@ -56,21 +56,21 @@ const Contact = () => {
                <input type="tel" className="email" placeholder='Your Phone Number' name='tel' />
                <input type="email" className="email" placeholder='Your Email' name='email' />
                <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
-               {emailSent && <div className="emailSentMsg">✅ Email Sent!</div>}
+               {emailSent && <div className="emailSentMsg">Email Sent! ✅</div>}
                <button type='submit' value='Send' className="submitBtn">Submit</button>
 
                <div className="links">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                     <img src={FacebookIcon} alt="Facebook" className="link" />
+                  <a href="https://github.com/muheez-G" target="_blank" rel="noopener noreferrer">
+                     <img src={GitIcon} alt="Facebook" className="link" />
                   </a>
-                  <a href="https://x.com/Hard2kill_AO?t=dSqldSbv7IT2a2YrFNY_JA&s=09" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/Muheez__G?t=qkDTZGBA9TjWjQis89vx_g&s=35" target="_blank" rel="noopener noreferrer">
                      <img src={TwitterIcon} alt="Twitter" className="link" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                     <img src={YoutubeIcon} alt="Youtube" className="link" />
-                  </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/jointrw.comportal?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener noreferrer">
                      <img src={IntagramIcon} alt="Instagram" className="link" />
+                  </a>
+                  <a href="https://github.com/muheez-G" target="_blank" rel="noopener noreferrer">
+                     <img src={LinkedIn} alt="Youtube" className="link" />
                   </a>
                </div>
             </form>
