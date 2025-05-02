@@ -20,7 +20,7 @@
    font-size: 1rem;
 }
 .worksImgs{
-   display: flex;
+   /* display: flex; */
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
@@ -28,10 +28,14 @@
    max-width: 65rem;
    margin-left: -5vw;
 }
+#works-div{
+   margin-top: 1rem;
+}
 .worksImg{
    object-fit: cover;
    height: 20rem ;
    margin: 0.5rem;
+   max-width:30rem;
 }
 .workBtn{
    margin: 3rem auto;
@@ -42,10 +46,13 @@
    background: orange;
    font-size: 1rem;
    cursor: pointer;
+   font-weight: 400;
 }
 .workBtn:hover{
-   font-size: 1.05rem;
-   font-weight: bold;
+   font-size: 1.005rem;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   background: #ffb223;
 }
 
 @media screen and (max-width:585px) {
@@ -60,5 +67,8 @@
       font-size: 0.85rem;
       font-weight: 400;
       padding-bottom: 1rem;
+   }
+   .worksImg{
+      max-width: 19rem;
    }
 }

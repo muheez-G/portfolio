@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, { useRef, useState } from 'react'
 import './contact.css'
 import Walmart from '../../assets/images/walmart.png'
 import Adobe from '../../assets/images/adobe.png'
@@ -9,25 +9,28 @@ import FacebookIcon from '../../assets/images/facebook-icon.png'
 import TwitterIcon from '../../assets/images/twitter.png'
 import YoutubeIcon from '../../assets/images/youtube.png'
 import IntagramIcon from '../../assets/images/instagram.png'
-
 import emailjs from '@emailjs/browser'
 
 
 const Contact = () => {
-   const form = useRef();
+   const form = useRef()
+   const [emailSent, setEmailSent] = useState(false)
+
    const sendEmail = (e) => {
-      e.preventDefault();
-  
+      e.preventDefault()
+
       emailjs
-        .sendForm('service_2rawgl7', 'template_6apc5tx', form.current, 'FB4LOTz0ULLvnc68D')
-        .then((result) => {
-               console.log(result.text);
-               e.target.reset();
-               alert('Email Sent!')
-            },(error) => {
-            console.log('FAILED...', error.text);
-         });
-   };
+         .sendForm('service_2rawgl7', 'template_6apc5tx', form.current, 'FB4LOTz0ULLvnc68D')
+         .then((result) => {
+               console.log(result.text)
+               e.target.reset()
+               setEmailSent(true)
+               setTimeout(() => setEmailSent(false), 2000) // Hide message after 2 seconds
+            }, (error) => {
+               console.log('FAILED...', error.text)
+         })
+   }
+
    return (
       <section id="contactPage">
          <div id="clients">
@@ -46,12 +49,16 @@ const Contact = () => {
          <div id="contact">
             <h1 className="contactPageTitle">Contact Me</h1>
             <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>  
-            
+
+
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                <input type="text" className='name' placeholder='Your Name' name='name' />
+               <input type="tel" className="email" placeholder='Your Phone Number' name='tel' />
                <input type="email" className="email" placeholder='Your Email' name='email' />
                <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
+               {emailSent && <div className="emailSentMsg">✅ Email Sent!</div>}
                <button type='submit' value='Send' className="submitBtn">Submit</button>
+
                <div className="links">
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                      <img src={FacebookIcon} alt="Facebook" className="link" />
@@ -71,5 +78,4 @@ const Contact = () => {
       </section>
    )
 }
-
 export default Contact
