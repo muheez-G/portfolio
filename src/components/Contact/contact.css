@@ -82,7 +82,8 @@
 }
 @media screen and (max-width:720px) {
    .contactPageTitle{
-      font-size: 2rem;
+      font-size: 1.9rem;
+      font-weight: 400;
       padding-top: 1rem;
       margin-bottom: 0.57rem;
    }

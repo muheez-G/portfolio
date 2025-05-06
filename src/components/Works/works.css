@@ -158,6 +158,10 @@
      flex-direction: column !important;
      align-items: center;
   }
+  .worksTitle {
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
 
   .projectImgWrapper {
      max-width: 100%;
