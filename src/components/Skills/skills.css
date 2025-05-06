@@ -82,5 +82,9 @@
    .skillBarImg{
       height: auto;
       width: 100%;
+      margin-right: 0rem;
+   }
+   .skillBars{
+      text-align: center;
    }
 }
