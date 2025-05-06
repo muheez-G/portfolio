@@ -154,55 +154,59 @@
  
  /* Mobile Styles */
  @media screen and (max-width: 768px) {
-   .projectCard {
-     flex-direction: column;
+  .projectCard {
+     flex-direction: column !important;
      align-items: center;
-     text-align: center;
-   }
- 
-   .projectImgWrapper {
-     max-width: 95%; /* make image bigger */
-   }
- 
-   .worksImg {
-     border-radius: 10px;
-   }
- 
-   .projectText {
+  }
+
+  .projectImgWrapper {
      max-width: 100%;
-     margin-top: 1rem;
+  }
+
+  .worksImg {
+     height: 200px; /* 🔥 Taller images for ALL mobile */
+     width: 100%;
+     object-fit: cover;
+     border-radius: 8px;
+  }
+
+  .projectText {
+     max-width: 100%;
      text-align: center;
-   }
- 
-   .projectText h3 {
-     font-size: 1.4rem; /* smaller title */
-     font-weight: 500; /* lighter font weight */
-   }
- 
-   .projectText p {
-     font-size: 0.9rem; /* smaller paragraph */
-     font-weight: 400; /* lighter */
-   }
- 
-   .tools {
+     margin-top: 1rem;
+  }
+
+  .projectText h3 {
+     font-size: 1.5rem;
+  }
+
+  .projectText p {
+     font-size: 1rem;
+     font-weight: 300;
+  }
+
+  .tools {
+     display: flex;
+     flex-wrap: wrap;
      justify-content: center;
-     gap: 0.4rem; /* smaller gap */
-     margin-bottom: 0.8rem;
-   }
- 
-   .tools span {
-     font-size: 0.8rem; /* smaller font */
-     padding: 0.25rem 0.6rem; /* smaller pills */
-   }
- 
-   .projectBtn {
-     padding: 0.4rem 1rem; /* smaller button */
-     font-size: 0.85rem;
-   }
- 
-   .workBtn {
-     padding: 0.5rem 1rem; /* smaller button */
+     gap: 0.5rem;
+     margin-top: 0.5rem;
+  }
+
+  .tools span {
      font-size: 0.9rem;
-   }
- }
+  }
+
+  .projectBtn {
+     margin-top: 1rem;
+     padding: 0.5rem 1.2rem;
+     font-size: 0.9rem;
+  }
+
+  .workBtn {
+     padding: 0.7rem 2.2rem;
+     font-size: 0.95rem;
+  }
+}
+
  

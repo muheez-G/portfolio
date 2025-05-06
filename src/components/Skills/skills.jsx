@@ -17,9 +17,8 @@ const Skills = () => {
 					<img src={UIDesign} alt="UIDesign" className='skillBarImg'/>	
 					<div className="skillBartext">
 						<h2 id='h2text'>UI/UX Design</h2>
-						<p>"I'm a UI/UX designer passionate about 
-							creating intuitive, visually engaging digital experiences that people genuinely enjoy using."
-
+						<p id='p'>I'm a UI/UX designer passionate about 
+							creating intuitive, visually engaging digital experiences that people genuinely enjoy using.
 						</p>
 					</div>
 				</div>	
@@ -30,7 +29,7 @@ const Skills = () => {
 					<img src={WebDesign} alt="WebDesign" className='skillBarImg'/>	
 					<div className="skillBartext">
 						<h2 id='h2text'>Web Design</h2>
-						<p> Passionate about clean code and cleaner design, I craft modern, engaging websites that tell compelling stories and deliver real results.
+						<p id='p'> Passionate about clean code and cleaner design, I craft modern, engaging websites that tell compelling stories and deliver real results.
 						</p>
 					</div>
 				</div>	
@@ -41,7 +40,7 @@ const Skills = () => {
 					<img src={AppDesign} alt="skillBar" className='skillBarImg'/>	
 					<div className="skillBartext">
 						<h2 id='h2text'>App Design</h2>
-						<p> I transform ideas into beautiful, functional applications by blending creativity with seamless user experience.""</p>
+						<p id='p'> I transform ideas into beautiful, functional applications by blending creativity with seamless user experience.</p>
 					</div>
 				</div>	
 			</div>

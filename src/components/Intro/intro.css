@@ -33,9 +33,9 @@
    transition: transform 0.3s ease-in-out; 
 }
 
-.bg:hover {
-   transform: translate(-50%, -50%) scale(1.05); 
-}
+/* .bgDiv:hover {
+   transform: translate(4-0%, -6%) scale(1.05); 
+} */
 
 .introContent {
    z-index: 1;
@@ -57,7 +57,7 @@
 
 .introPara {
    font-size: medium;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .btn {
@@ -91,13 +91,13 @@
    }
    .introContent {
       font-size: 1rem;
-      text-align: left;
+      text-align: center;
       min-width: fit-content;
       padding-bottom: 0rem;
    }
    .hello {
       font-size: 2.75rem;
-      font-weight: 200;
+      font-weight: 300;
    }
    .btn{
       padding: 0.45rem 0.85rem;
@@ -107,5 +107,25 @@
 @media screen and (max-width: 480px) {
    .bg {
       right: -19vw;
+   }
+   #intro{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .bgDiv {
+      margin-top: 5rem;
+   }
+   .bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      z-index: -1;
+      object-fit: cover;
+      height: 40vh; 
+      width: 40vh; 
+      border-radius: 50%; 
+      background-color: #ff9500; 
+      transition: transform 0.3s ease-in-out; 
    }
 }
