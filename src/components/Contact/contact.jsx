@@ -33,18 +33,7 @@ const Contact = () => {
 
    return (
       <section id="contactPage">
-         {/* <div id="clients">
-            <h1 className="contactPageTitle">My Clients</h1>
-            <p className="clientDesc">
-               I have had the opportunity to work with a diverse group of companies. Some of the notable companies I have worked with includes
-            </p>
-            <div className="clientImgs">
-               <img src={Walmart} alt="Client" className="clientImg" />
-               <img src={Microsoft} alt="Client" className="clientImg" />
-               <img src={Adobe} alt="Client" className="clientImg" />
-               <img src={Facebook} alt="Client" className="clientImg" />
-            </div>
-         </div> */}
+ 
 
          <div id="contact">
             <h1 className="contactPageTitle">Contact Me</h1>
@@ -58,21 +47,6 @@ const Contact = () => {
                <textarea className='msg' name="message" rows='5' placeholder='Your Message' required></textarea>
                {emailSent && <div className="emailSentMsg">Email Sent! ✅</div>}
                <button type='submit' value='Send' className="submitBtn">Submit</button>
-
-               <div className="links">
-                  <a href="https://github.com/muheez-G" target="_blank" rel="noopener noreferrer">
-                     <img src={GitIcon} alt="Facebook" className="link" />
-                  </a>
-                  <a href="https://x.com/Muheez__G?t=qkDTZGBA9TjWjQis89vx_g&s=35" target="_blank" rel="noopener noreferrer">
-                     <img src={TwitterIcon} alt="Twitter" className="link" />
-                  </a>
-                  <a href="https://www.instagram.com/jointrw.comportal?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener noreferrer">
-                     <img src={IntagramIcon} alt="Instagram" className="link" />
-                  </a>
-                  <a href="https://github.com/muheez-G" target="_blank" rel="noopener noreferrer">
-                     <img src={LinkedIn} alt="Youtube" className="link" />
-                  </a>
-               </div>
             </form>
          </div>
       </section>

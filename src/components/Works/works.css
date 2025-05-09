@@ -1,5 +1,5 @@
 #works {
-   padding: 2rem 1rem;
+   padding: 2rem 0rem;
    max-width: 1200px;
    margin: 0 auto;
    color: white;
@@ -164,7 +164,7 @@
   }
 
   .projectImgWrapper {
-     max-width: 100%;
+     max-width: 94%;
   }
 
   .worksImg {
@@ -181,12 +181,14 @@
   }
 
   .projectText h3 {
-     font-size: 1.5rem;
+     font-size: 1.2rem;
   }
 
   .projectText p {
-     font-size: 1rem;
-     font-weight: 300;
+     font-size: 0.85rem;
+     font-weight: 400;
+     padding-left: 0.85rem;
+     padding-right: 0.85rem;
   }
 
   .tools {

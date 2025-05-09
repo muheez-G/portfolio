@@ -35,8 +35,8 @@
 }
 .contactDesc {
    padding: 1rem;
-   font-size: medium;
-   font-weight: 300;
+   font-size: 1rem;
+   font-weight: 500;
 }
 .contactForm{
    margin: 1rem;
@@ -87,8 +87,9 @@
       padding-top: 1rem;
       margin-bottom: 0.57rem;
    }
-   .clientDesc{
-      font-size: 0.85rem;
+   .contactDesc{
+      font-size: 0.9rem;
+      font-weight: 400;
    }
    #contactPage input::placeholder,
    textarea::placeholder {
