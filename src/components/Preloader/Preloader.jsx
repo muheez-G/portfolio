@@ -28,10 +28,10 @@ const Preloader = () => {
       <h1 className="preloader-title">
         <span className="highlight">Muheez</span><span className="highlight-dev">Dev</span>
       </h1>
-      <p className="preloader-progress">{progress}%</p>
       <div className="preloader-bar">
         <div className="preloader-bar-fill" style={{ width: `${progress}%` }}></div>
       </div>
+      <p className="preloader-progress">{progress}%</p>
     </div>
   );
 };

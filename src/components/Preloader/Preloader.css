@@ -37,6 +37,7 @@
 }
 
 .preloader-progress {
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2rem;
