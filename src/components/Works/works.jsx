@@ -22,7 +22,7 @@ const projects = [
     description: "A responsive platform for men's cosmetic services...",
     tools: ["React", "HTML", "CSS", "Git"],
     image: Portfolio4,
-    link: "https://men-cosmetic-app-react.vercel.app/"
+    link: "https://cosmetic-app-react.vercel.app/"
   },
   {
     title: "React Jobs Platform",
