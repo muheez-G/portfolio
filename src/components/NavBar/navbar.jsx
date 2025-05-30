@@ -1,41 +1,61 @@
-import React, { useState } from 'react'
-import './navbar.css'
-import logo from '../../assets/images/logo.png'
-import contactImg from '../../assets/images/contact.png'
-import { Link } from 'react-scroll'
-import menu from '../../assets/images/menu.png'
+import React, { useState } from 'react';
+import './navbar.css';
+import { Link } from 'react-scroll';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { FaEnvelope } from 'react-icons/fa';
 
 const Navbar = () => {
-   const [showMenu, setShowMenu] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
+  const closeSidebar = () => {
+    setShowSidebar(false);
+  };
+
   return (
-      <nav className='navbar'> 
+    <>
+      <nav className='navbar'>
+        <p className='logo'>M <span>&#47;&gt;</span></p>
 
-         {/* <img src={logo} alt="Logo" className='logo' /> */}
-         <p className='logo'>M <span> &#47;&gt; </span> </p>
+        <div className="desktopMenu">
+          <Link to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem">Home</Link>
+          <Link to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem">Skills</Link>
+          <Link to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem">Portfolio</Link>
+        </div>
 
-         <div className="desktopMenu">
-            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Home </Link>
-            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Skills </Link>
-            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Portfolio </Link>
-         </div>
+        <button className="desktopMenuBtn" onClick={() => {
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }}>
+          <FaEnvelope className='desktopMenuImg' />
+          Contact Me
+        </button>
 
-         <button className="desktopMenuBtn" onClick={() => {
-            document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-         }}>
-            <img src={contactImg} alt="" className='desktopMenuImg'/>
-            Contact Me
-         </button>
-
-         <img src={menu} alt="Menu" className='mobMenu' onClick={()=>setShowMenu(!showMenu)} />
-         <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
-            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)} > Home </Link>
-            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Skills </Link>
-            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Portfolio </Link>
-            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}> Contact </Link>
-         </div>
-
+        {/* Show menu icon only when sidebar is closed */}
+        {!showSidebar && (
+          <div className="mobMenuIcon" onClick={toggleSidebar}>
+            <FiMenu size={30} color="#ffa500" />
+          </div>
+        )}
       </nav>
-  )
-}
 
-export default Navbar
+      {showSidebar && <div className="sidebar-backdrop" onClick={closeSidebar}></div>}
+
+      <div className={`sidebar ${showSidebar ? 'open' : ''}`}>
+        {/* Close icon inside sidebar */}
+        <div className="mobMenuIcon closeIcon" onClick={closeSidebar}>
+          <FiX size={30} color="#ffa500" />
+        </div>
+
+        <Link to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={closeSidebar}>Home</Link>
+        <Link to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={closeSidebar}>Skills</Link>
+        <Link to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={closeSidebar}>Portfolio</Link>
+        <Link to='contact' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={closeSidebar}>Contact</Link>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;

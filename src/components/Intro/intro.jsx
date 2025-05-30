@@ -14,17 +14,21 @@ const Intro = () => {
   return (
     <section id='intro' data-aos="zoom-out">
       <div className='bgDiv'>
-        <img src={bg} alt="Profile" className='bg' />
+        <img src={bg} alt="MuheezDev profile" className='bg' />
       </div>
+
       <div className='introContent'>
-        <span className="hello" id="hello">Hello,</span>
+        <span className="hello">Hello,</span>
         <span className="introText">
-          I'm <span className="introName">MuheezDev</span> <br />Website Designer
+          I'm <span className="introName">MuheezDev</span> <br />
+          Website Designer
         </span>
+
         <p className="introPara">
           I am a skilled web designer with experience in creating <br />
-          visually appealing and user friendly websites.
+          visually appealing and user-friendly websites.
         </p>
+
         <Link to="contact" smooth={true} duration={500}>
           <button className="btn">
             <img src={btnImg} alt="Hire" className="btnImg" />

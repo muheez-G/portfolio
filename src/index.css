@@ -1,1 +1,10 @@
 @import "tailwindcss";
+/* Prevent unwanted horizontal scrolling caused by AOS or transitions */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Prevent accidental scrollbars from flex/grid shifts */
+* {
+  box-sizing: border-box;
+}

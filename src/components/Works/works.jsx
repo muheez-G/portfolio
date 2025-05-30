@@ -7,7 +7,6 @@ import Portfolio2 from '../../assets/images/portfolio-2.png';
 import Portfolio3 from '../../assets/images/portfolio-3.png';
 import Portfolio4 from '../../assets/images/portfolio-4.jpeg';
 import Portfolio5 from '../../assets/images/portfolio-5.jpeg';
-import Portfolio6 from '../../assets/images/portfolio-6.jpeg';
 
 const projects = [
   {
@@ -36,7 +35,7 @@ const projects = [
     description: "Movie web app powered by React and real-time APIs...",
     tools: ["HTML", "CSS", "React", "Git"],
     image: Portfolio5,
-    link: "https://cinema-web-react.vercel.app//"
+    link: "https://cinema-web-react.vercel.app/"
   },
   {
     title: "EVOLUTION – EV Landing Page",
@@ -49,7 +48,16 @@ const projects = [
 
 const Works = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    const handleLoad = () => {
+      AOS.init({ duration: 1000, once: true });
+    };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
   }, []);
 
   return (
