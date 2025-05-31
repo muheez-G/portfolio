@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './intro.css';
-import bg from '../../assets/images/image.png';
+import bg from '../../assets/images/bg.png';
 import btnImg from '../../assets/images/hireme.png';
 import { Link } from 'react-scroll';
 import AOS from 'aos';

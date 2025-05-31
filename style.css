@@ -10,5 +10,5 @@ body{
    background-color: #1a1a1afe;
    color: white;
    overflow: hidden;
-   overflow-y: scroll;
+   /* overflow-y: scroll; */
 }
