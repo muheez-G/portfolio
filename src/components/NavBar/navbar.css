@@ -111,9 +111,6 @@
 
 /* Responsive */
 @media screen and (max-width: 720px) {
-	.navbar{
-		position: sticky;
-	}
 	.mobMenuIcon {
 		display: block;
 	}
