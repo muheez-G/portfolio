@@ -174,7 +174,7 @@
 }
 
 /* Mobile & Tablet Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .projectCard {
     flex-direction: column !important;
     align-items: center;
