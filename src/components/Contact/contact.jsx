@@ -69,7 +69,7 @@ const Contact = () => {
 
         {/* Resume download button (outside form) */}
         <a
-          href="https://docs.google.com/document/d/1yxIqd4J2nE8QeogSbAQbxKqgduH9-Nw7Rmw5RVMbE6Y/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1YliXIKsuoOYdvmrPX4W_CLvmN0BbS8xh/"
           target="_blank"
           rel="noopener noreferrer"
         >
