@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className='footer'>
       <h2>Engineering the web with performance, scalability, and design in mind 🚀</h2>
 
-      <div className="links">
+      <div className="links" data-aos="fade-up" >
         <a href="https://www.linkedin.com/in/muheez-ashogbon-9a9a00368" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={30} color="#ffffffc2" />
         </a>

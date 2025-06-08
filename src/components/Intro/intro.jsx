@@ -19,10 +19,10 @@ const Intro = () => {
 
       <div className='introContent'>
         <span className="hello">Hello,</span>
-        <span className="introText">
+        <h1 className="introText">
           I'm <span className="introName">Ashogbon Muheez</span> <br />
           Website Designer
-        </span>
+        </h1>
 
         <p className="introPara">
           I am a skilled web designer with experience in creating <br />

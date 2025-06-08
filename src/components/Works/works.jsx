@@ -28,14 +28,14 @@ const projects = [
   description: "A clean and responsive job board application built with React and Tailwind CSS. It allows users to browse, filter, and explore job listings with a smooth, user-friendly interface.",
   tools: ["React", "Tailwind CSS", "Vite"],
   image: Portfolio3,
-  link: "https://react-jobs-omega-ivory.vercel.app/jobs"
+  link: "https://react-jobs-omega-ivory.vercel.app/"
   },
   {
     title: "CineMa",
     description: "A sleek, responsive movie web app powered by React and real-time APIs. Features include movie browsing, search functionality, and dynamic content rendering. Built with HTML, CSS, React, and Git.",
     tools: ["HTML", "CSS", "React", "Git"],
     image: Portfolio5,
-    link: "https://cinema-web-react.vercel.app//"
+    link: "https://cinema-web-react.vercel.app/"
   },
   {
   title: "EVOLUTION – EV Landing Page",
@@ -76,8 +76,9 @@ const Works = () => {
           <div
             className={`projectCard ${idx % 2 !== 0 ? 'rightAlign' : ''}`}
             key={idx}
-            data-aos={idx % 2 === 0 ? 'fade-right' : 'fade-left'}
+            data-aos='fade-up'
           >
+            {/* {idx % 2 === 0 ? 'fade-right' : 'fade-left'} */}
             <div className="projectImgWrapper">
               <a href={proj.link} target="_blank" rel="noopener noreferrer" className="projectLinkWrapper">
                 <img src={proj.image} alt={proj.title} className="worksImg" />

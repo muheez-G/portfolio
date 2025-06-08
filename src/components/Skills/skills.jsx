@@ -13,7 +13,7 @@ const Skills = () => {
         Skilled in HTML, CSS, JavaScript, TypeScript, and React, I craft clean, strategic solutions that deliver standout user experiences.
       </span>
 
-      <div className="skillBars" data-aos="fade-right" data-aos-delay="200">
+      <div className="skillBars" data-aos="fade-up" data-aos-delay="200">
         <div className="skillBar">
           <img src={UIDesign} alt="UI Design" className="skillBarImg" />
           <div className="skillBarText">
@@ -23,7 +23,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="skillBars" data-aos="fade-left" data-aos-delay="300">
+      <div className="skillBars" data-aos="fade-up" data-aos-delay="300">
         <div className="skillBar">
           <img src={WebDesign} alt="Web Design" className="skillBarImg" />
           <div className="skillBarText">
