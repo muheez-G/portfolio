@@ -24,16 +24,22 @@ const Navbar = () => {
           <Link to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem">Home</Link>
           <Link to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem">Skills</Link>
           <Link to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem">Portfolio</Link>
-        </div>
-
-        <button className="desktopMenuBtn" onClick={() => {
-          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-        }}>
+          
+          <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuBtn"
+        >
           <FaEnvelope className='desktopMenuImg' />
           Contact Me
-        </button>
+        </Link>
+        </div>
 
-        {/* Show menu icon only when sidebar is closed */}
+        
+
         {!showSidebar && (
           <div className="mobMenuIcon" onClick={toggleSidebar}>
             <FiMenu size={30} color="#ffa500" />
@@ -44,7 +50,6 @@ const Navbar = () => {
       {showSidebar && <div className="sidebar-backdrop" onClick={closeSidebar}></div>}
 
       <div className={`sidebar ${showSidebar ? 'open' : ''}`}>
-        {/* Close icon inside sidebar */}
         <div className="mobMenuIcon closeIcon" onClick={closeSidebar}>
           <FiX size={30} color="#ffa500" />
         </div>

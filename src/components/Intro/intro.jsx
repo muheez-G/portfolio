@@ -20,13 +20,14 @@ const Intro = () => {
       <div className='introContent'>
         <span className="hello">Hello,</span>
         <h1 className="introText">
-          I'm <span className="introName">Ashogbon Muheez</span> <br />
-          Website Designer
+          I'm <span className="introName">Ashogbon M.T</span> <br />
+          Frontend Developer
         </h1>
 
-        <p className="introPara">
-          I am a skilled web designer with experience in creating <br />
-          visually appealing and user-friendly websites.
+        <p className="introPara">  
+          I am a passionate frontend developer with experience in 
+          building <br />
+          dynamic and user-friendly interfaces using React.js.
         </p>
 
         <Link to="contact" smooth={true} duration={500}>

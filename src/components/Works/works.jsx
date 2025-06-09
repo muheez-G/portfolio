@@ -71,12 +71,12 @@ const Works = () => {
   return (
     <section id="works">
       <h2 className="worksTitle" data-aos="zoom-in">My Portfolio</h2>
-      <div className="worksGrid">
+      <div className="worksGrid" data-aos='fade-up'>
         {projects.map((proj, idx) => (
           <div
             className={`projectCard ${idx % 2 !== 0 ? 'rightAlign' : ''}`}
             key={idx}
-            data-aos='fade-up'
+            // data-aos='fade-up'
           >
             {/* {idx % 2 === 0 ? 'fade-right' : 'fade-left'} */}
             <div className="projectImgWrapper">
