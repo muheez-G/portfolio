@@ -168,4 +168,10 @@
     background-color: transparent;
     box-shadow: 0 0 15px rgba(255, 167, 4, 0.3);
   }
+  .introText {
+  font-size: 1.6rem;
+}
+#br{
+  display: none;
+}
 }

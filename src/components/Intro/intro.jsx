@@ -26,7 +26,7 @@ const Intro = () => {
 
         <p className="introPara">  
           I am a passionate frontend developer with experience in 
-          building <br />
+          building <br id='br'/>
           dynamic and user-friendly interfaces using React.js.
         </p>
 
